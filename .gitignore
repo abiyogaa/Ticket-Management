@@ -1,0 +1,21 @@
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+
+# Build output and runtime databases
+**/target/
+**/data/
+*.class
+*.log
+*.mv.db
+*.trace.db
+
+# IDE and OS metadata
+.idea/
+.vscode/
+*.iml
+.DS_Store
