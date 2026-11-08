@@ -41,6 +41,11 @@ public class StatusService {
 
     // FIX: Code complexity dengan Map
     public int calculatePriorityScore(String priority) {
+        if (priority == null) {
+            throw new IllegalArgumentException(
+                "Priority wajib diisi"
+            );
+        }
         return PRIORITY_SCORES.getOrDefault(priority, 0);
     }
 }
